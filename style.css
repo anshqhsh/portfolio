@@ -47,8 +47,16 @@ a {
   color: white;
 }
 ul {
-  list-style: none;
   padding-left: 0;
+}
+li {
+  list-style: none;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -108,4 +116,29 @@ p {
 }
 .navbar__menu__item:hover {
   background-color: rgba(250, 167, 13, 0.913);
+}
+/* Home */
+#home {
+  background: url("images/profilebackground.jpg") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid whitesmoke;
+}
+.home__title,
+.home__description {
+  color: white;
+}
+.home__contact {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid white;
+  border-radius: 4px;
 }
