@@ -362,8 +362,33 @@ p {
   border-radius: 4px;
 }
 .testimonial__speech-bubble p {
-  color: #eeeeee;
+  color: #bdbdbd;
 }
 .testimonial__speech-bubble a {
   color: #feb546;
+}
+
+/* Contact */
+#contact {
+  background-color: #fe918d;
+}
+.contact__title,
+.contact__email,
+.contact__rights {
+  color: white;
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+.contact__links {
+  font-size: 48px;
+  margin: 24px 0;
+}
+.contact__links i {
+  transition: all 300ms ease-in;
+}
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: bisque;
 }
