@@ -370,7 +370,7 @@ p {
 
 /* Contact */
 #contact {
-  background-color: #fe918d;
+  background-color: #73aace;
 }
 .contact__title,
 .contact__email,
@@ -390,5 +390,5 @@ p {
 }
 .contact__links i:hover {
   transform: scale(1.1);
-  color: bisque;
+  color: #b1df0b;
 }
