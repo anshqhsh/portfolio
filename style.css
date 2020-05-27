@@ -101,6 +101,7 @@ p {
   padding: 16px;
   transition: all 300ms ease-in-out;
   background-color: transparent;
+  z-index: 1;
 }
 #navbar.navbar--dark {
   background-color: #b2d9b7;
@@ -124,7 +125,7 @@ p {
   border: 1px solid white;
 }
 .navbar__menu__item:hover {
-  background-color: rgba(250, 167, 13, 0.913);
+  background-color: rgba(142, 211, 4, 0.913);
 }
 .navbar__toggle-btn {
   position: absolute;
