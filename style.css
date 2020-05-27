@@ -410,6 +410,25 @@ p {
   transform: scale(1.1);
   color: #b1df0b;
 }
+/* Scroll */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  color: white;
+  background-color: #b2d9b7;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 300ms ease-in;
+}
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 
 /* For below 768px screen width 반응형*/
 @media screen and (max-width: 768px) {
