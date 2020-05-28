@@ -64,28 +64,28 @@ button {
 /* Typography */
 
 h1 {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   color: black;
   margin: 16px 0px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
   color: black;
   margin: 8px 0;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   font: weight 400;
   color: black;
   margin: 8px 0;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: black;
   margin: 4px 0;
@@ -112,7 +112,7 @@ p {
   display: flex;
 }
 .navbar__logo {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
 }
 .navbar__menu__item {
@@ -156,16 +156,20 @@ p {
 }
 .home__contact {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   margin: 24px;
   padding: 8px 12px;
   border: 2px solid white;
   border-radius: 4px;
 }
+.home__contact:hover {
+  background-color: #b1df0b;
+}
 /* Section common */
 .section {
   padding: 50px;
+  padding-top: 100px;
   text-align: center;
   margin: auto;
 }
@@ -202,7 +206,7 @@ p {
   color: #4d4d4d;
 }
 .major__description {
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .job {
@@ -218,10 +222,10 @@ p {
   color: #4d4d4d;
 }
 .job__name {
-  font-size: 16px;
+  font-size: 14px;
 }
 .job__period {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* Skill */
@@ -273,8 +277,9 @@ p {
 .category__btn {
   border: 1px solid #bdbdbd;
   border-radius: 4px;
-  font-size: 18px;
+  font-size: 16px;
   padding: 8px 48px;
+  position: relative;
 }
 .category__btn.selected,
 .category__btn:hover {
@@ -290,13 +295,14 @@ p {
   background-color: #feb546;
   border-radius: 50%;
   color: white;
+  margin-top: 4px;
   width: 24px;
   height: 24px;
   line-height: 24px;
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all 300ms ease-in;
 }
@@ -411,7 +417,7 @@ p {
   margin: 32px 0;
 }
 .contact__links {
-  font-size: 48px;
+  font-size: 40px;
   margin: 24px 0;
 }
 .contact__links i {
@@ -443,8 +449,18 @@ p {
 
 /* For below 768px screen width 반응형*/
 @media screen and (max-width: 768px) {
+  :root {
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
   .navbar__toggle-btn {
     display: block;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
   }
   #navbar {
     flex-direction: column;
@@ -465,20 +481,50 @@ p {
     display: block;
   }
 
+  .section {
+    padding: 16px;
+  }
+
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
   }
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30x;
   }
   .skillset {
     flex-direction: column;
   }
+  .category__btn {
+    margin: 4px;
+    width: 70%;
+  }
   .project {
     flex-grow: 1;
   }
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
   .testimonial__avatar {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+  }
+  .testimonial__avatar:nth-child(even),
+  .testimonial__avatar:nth-child(odd) {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  .testimonial__speech-bubble {
+    order: 1;
+  }
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
   }
 }
