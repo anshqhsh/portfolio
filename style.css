@@ -85,7 +85,7 @@ h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: black;
   margin: 4px 0;
@@ -219,13 +219,19 @@ p {
 }
 .job__name,
 .job__period {
-  color: #4d4d4d;
+  margin-left: 20px;
 }
 .job__name {
-  font-size: 14px;
+  color: #4d4d4d;
+  font-size: 22px;
+}
+.job__class {
+  margin-left: 20px;
+  font-size: 16px;
 }
 .job__period {
-  font-size: 12px;
+  color: #6f6c6c;
+  font-size: 16px;
 }
 
 /* Skill */
