@@ -22,13 +22,14 @@ navbarMenu.addEventListener(`click`, (event) => {
   }
   //link가 있는 경우에만 navbar 기능 수행
   //   console.log(event.target.dataset.link);
+  navbarMenu.classList.remove(`open`);
   scrollIntoView(link);
 });
 
 // Navbar toggle button for small screen
-const navbarToggleBtn = document.querySelector(`navbar__toggle-btn`);
-navbarToggleBtn.addEventListener(`click`, () => {
-  navbarMenu.classList.toggle(`open`);
+const navbarToggleBtn = document.querySelector(`.navbar__toggle-btn`);
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
 });
 
 //Handle click on "contact me" button on home

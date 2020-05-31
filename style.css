@@ -289,7 +289,7 @@ p {
 }
 .category__btn.selected,
 .category__btn:hover {
-  background-color: #fe918d;
+  background-color: #b2d9b7;
   color: white;
 }
 .category__btn.selected .category__count,
@@ -463,7 +463,7 @@ p {
     --font-micro: 12px;
   }
   .navbar__toggle-btn {
-    display: block;
+    display: none;
     top: 20px;
     right: 20px;
     font-size: 18px;
