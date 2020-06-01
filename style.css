@@ -408,6 +408,10 @@ p {
 .testimonial__speech-bubble a {
   color: #feb546;
 }
+.testimonial__recomend {
+  width: 600px;
+  height: 900px;
+}
 
 /* Contact */
 #contact {
@@ -532,5 +536,9 @@ p {
     line-height: 50px;
     right: 16px;
     bottom: 16px;
+  }
+  .testimonial__recomend {
+    width: 400px;
+    height: 600px;
   }
 }
