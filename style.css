@@ -459,6 +459,9 @@ p {
 
 /* For below 768px screen width 반응형*/
 @media screen and (max-width: 768px) {
+  .h3 {
+    font-size: 9px;
+  }
   :root {
     --font-large: 30px;
     --font-medium: 18px;
@@ -538,7 +541,7 @@ p {
     bottom: 16px;
   }
   .testimonial__recomend {
-    width: 400px;
-    height: 600px;
+    width: 300px;
+    height: 450px;
   }
 }
