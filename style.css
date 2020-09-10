@@ -240,6 +240,30 @@ p {
   color: #6f6c6c;
   font-size: 16px;
 }
+.Trainings {
+  display: flex;
+  align-items: center;
+}
+.Trainings__description {
+  margin: 0 16px;
+  text-align: left;
+}
+.Trainings__name,
+.Trainings__period {
+  margin-left: 20px;
+}
+.Trainings__name {
+  color: #4d4d4d;
+  font-size: 22px;
+}
+.Trainings__class {
+  margin-left: 20px;
+  font-size: 16px;
+}
+.Trainings__period {
+  color: #6f6c6c;
+  font-size: 16px;
+}
 
 /* Skill */
 #skills {
