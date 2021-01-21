@@ -215,7 +215,6 @@ p {
 .major__description {
   font-size: 12px;
 }
-
 .job {
   display: flex;
   align-items: center;
@@ -309,6 +308,31 @@ p {
 .tools,
 .etc {
   padding: 20px;
+}
+/* Education */
+.edu {
+  display: flex;
+  align-items: center;
+}
+.edu__description {
+  margin: 0 16px;
+  text-align: left;
+}
+.edu__name,
+.edu__period {
+  margin-left: 20px;
+}
+.edu__name {
+  color: #4d4d4d;
+  font-size: 22px;
+}
+.edu__class {
+  margin-left: 20px;
+  font-size: 16px;
+}
+.edu__period {
+  color: #6f6c6c;
+  font-size: 16px;
 }
 /* Work */
 .category__btn {
@@ -406,43 +430,6 @@ p {
   margin-top: 8px;
   color: #bdbdbd;
 }
-/* Testimonial */
-#testimonials {
-  background-color: #eeeeee;
-}
-.testimonials {
-  margin: 40px;
-}
-.testimonial {
-  display: flex;
-  margin: 32px 0;
-}
-.testimonial__avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-.testimonial__avatar:nth-child(odd) {
-  margin-right: 40px;
-}
-.testimonial__avatar:nth-child(even) {
-  margin-left: 40px;
-}
-.testimonial__speech-bubble {
-  padding: 18px;
-  background-color: white;
-  border-radius: 4px;
-}
-.testimonial__speech-bubble p {
-  color: #bdbdbd;
-}
-.testimonial__speech-bubble a {
-  color: #feb546;
-}
-.testimonial__recomend {
-  width: 600px;
-  height: 900px;
-}
 
 /* Contact */
 #contact {
@@ -535,7 +522,7 @@ p {
     margin-bottom: 0px;
   }
   .major {
-    margin-bottom: 30x;
+    margin-bottom: 30px;
   }
   .skillset {
     flex-direction: column;
@@ -546,22 +533,6 @@ p {
   }
   .project {
     flex-grow: 1;
-  }
-  .testimonial {
-    flex-direction: column;
-    align-items: center;
-  }
-  .testimonial__avatar {
-    width: 120px;
-    height: 120px;
-  }
-  .testimonial__avatar:nth-child(even),
-  .testimonial__avatar:nth-child(odd) {
-    margin: 0;
-    margin-bottom: 8px;
-  }
-  .testimonial__speech-bubble {
-    order: 1;
   }
   .arrow-up {
     width: 48px;
