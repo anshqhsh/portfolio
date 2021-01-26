@@ -1,190 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>JoonHyuk's portfolio</title>
     <meta
-      name="description"
-      content="portfolio for world-renowned software engineer JoonHyuk"
+      name='description'
+      content='portfolio for world-renowned software engineer JoonHyuk'
     />
-    <meta name="author" content="JoonHyuk" />
-    <link rel="icon" type="image/png" href="images/yellow star.png" />
+    <meta name='author' content='JoonHyuk' />
+    <link rel='icon' type='image/png' href='images/yellow star.png' />
     <script
-      src="https://kit.fontawesome.com/41cfbe37c4.js"
-      crossorigin="anonymous"
+      src='https://kit.fontawesome.com/41cfbe37c4.js'
+      crossorigin='anonymous'
     ></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
+      href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap'
+      rel='stylesheet'
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+    <link rel='stylesheet' href='style.css' />
+    <script src='main.js' defer></script>
   </head>
   <body>
     <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <i class="fab fa-apple"></i>
-        <a href="#">JoonHyuk</a>
+    <nav id='navbar'>
+      <div class='navbar__logo'>
+        <i class='fab fa-apple'></i>
+        <a href='#'>JoonHyuk</a>
       </div>
-      <div class="navbar__menu">
-        <ul class="navbar__menu">
-          <li class="navbar__menu__item active" data-link ="#home">Home</li>
-          <li class="navbar__menu__item" data-link ="#about">About</li>
-          <li class="navbar__menu__item" data-link ="#skills">Skills</li>
-          <li class="navbar__menu__item" data-link ="#work">My work</li>
-          <li class="navbar__menu__item" data-link ="#testimonials">Testimonials</li>
-          <li class="navbar__menu__item" data-link ="#contact">contact</li>
+        <ul class='navbar__menu'>
+          <li class='navbar__menu__item active' data-link ='#home'>Home</li>
+          <li class='navbar__menu__item' data-link ='#about'>About</li>
+          <li class='navbar__menu__item' data-link ='#skills'>Skills</li>
+          <li class='navbar__menu__item' data-link ='#work'>My work</li>
+          <li class='navbar__menu__item' data-link ='#education'>Education</li>
+          <li class='navbar__menu__item' data-link ='#contact'>contact</li>
         </ul>
-      </div>
         <!-- Toggle button -->
-      <button class="navbar__toggle-btn">
-        <i class="fas fa-bars"></i>
+      <button class='navbar__toggle-btn'>
+        <i class='fas fa-bars'></i>
       </button>
     </nav>
   
     <!-- Home -->
-    <section id="home">
-      <div class="home__container">
-      <img
-        src="images/profile r.JPG"
-        alt="JoonHyuk's profile photo"
-        class="home__avatar"
-      />
-      <h1 class="home__title">Hello, <br />I'm Lee JoonHyuk</h1>
-      <h2 class="home__description">
-        “사람들에게 더 나은 삶과 안녕을 꿈꾸는 지원자 이준혁입니다.”   
-        <br/>     
-        <br/>현재 KORUSㆍ국립대자원관리시스템 프로젝트의 한 일원으로서 운영(SM), Naxacro를 이용한 개발(JAVA)과, 시스템 교육업무를 맡고 있습니다.<br/>
-        스마트미디어인재개발원에서  Java, HTML, CSS, JavaScript, Oracle DB, Android Studio 등을 이용한 프로젝트를 진행했습니다.
-      </h2>
-      <button class="home__contact">Contact Me</button>
-      <a href="images/acc.jpg" download><button class="home__contact">Resume</button></a>
+    <section id='home'>
+      <div class='home__container'>
+        <img
+          src='images/profile r.JPG'
+          alt='JoonHyuk's profile photo'
+          class='home__avatar'
+        />
+        <h1 class='home__title'>Hello, <br />I'm Lee JoonHyuk</h1>
+        <h2 class='home__description'>
+          “사람들에게 더 나은 삶과 안녕을 꿈꾸는 지원자 이준혁입니다.”   
+          <br/>     
+          <br/>현재 KORUSㆍ국립대자원관리시스템 프로젝트의 한 일원으로서 운영(SM), Naxacro를 이용한 개발(JAVA)과, 시스템 교육업무를 맡고 있습니다.<br/>
+          스마트미디어인재개발원에서  Java, HTML, CSS, JavaScript, Oracle DB, Android Studio 등을 이용한 프로젝트를 진행했습니다.
+        </h2>
+        <button class='home__contact'>Contact Me</button>
+        <a href='images/acc.jpg' download><button class='home__contact'>Resume</button></a>
       </div>
     </section>
 
     <!-- About -->
-    <section id="about" class="section section__container">
+    <section id='about' class='section section__container'>
       <h1>About me</h1>
       <p>저는 이런 능력들을 가지고 있습니다!</p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-html5"></i>
+      <div class='about__majors'>
+        <div class='major'>
+          <div class='major__icon'>
+            <i class='fab fa-html5'></i>
           </div>
-          <h2 class="major__title">Front-end</h2>
-          <div class="major__description">
+          <h2 class='major__title'>Front-end</h2>
+          <div class='major__description'>
             JavaScript, TypeScript, HTML, CSS, 
             <br />
             React, Nexacro
           </div>
         </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-java"></i>
+        <div class='major'>
+          <div class='major__icon'>
+            <i class='fab fa-java'></i>
           </div>
-          <h2 class="major__title">Back-End</h2>
-          <div class="major__description">
+          <h2 class='major__title'>Back-End</h2>
+          <div class='major__description'>
             JAVA, SQL, Node.js
           </div>
         </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-android"></i>
+        <div class='major'>
+          <div class='major__icon'>
+            <i class='fab fa-android'></i>
           </div>
-          <h2 class="major__title">Mobile</h2>
-          <p class="major__description">
+          <h2 class='major__title'>Mobile</h2>
+          <p class='major__description'>
             Android Studio
           </p>
         </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fas fa-pen"></i>
+        <div class='major'>
+          <div class='major__icon'>
+            <i class='fas fa-pen'></i>
           </div>
-          <h2 class="major__title">Tools</h2>
-          <p class="major__description">
+          <h2 class='major__title'>Tools</h2>
+          <p class='major__description'>
             Git, Notion, Final cut pro, 
             <br />
             Photoshop, CAD, Inventor Etc...
           </p>
         </div>
       </div>
-      <h1 class="jobs_header">
+      <h1 class='jobs_header'>
           Work  
           <br />
       </h1>
-      <div class="about__jobs">
-        <div class="job">
-          <img src="images/kornec_logo.png" alt="class" class="job__logo" />
-          <div class="job__description">
-            <h2 class="job__name">
+      <div class='about__jobs'>
+        <div class='job'>
+          <img src='images/kornec_logo.png' alt='class' class='job__logo' />
+          <div class='job__description'>
+            <h2 class='job__name'>
               (주)코넥
             </h2>
-            <h2 class="job__class">
+            <h2 class='job__class'>
               - KORUSㆍ국립대자원관리시스템구축 프로젝트(근무처 : 광주광역시 전남대학교 용지관 7층) 
             </h2>
-            <h3 class="job__period">
+            <h3 class='job__period'>
               내용 : <br> JAVA, Nexacro를 이용한 통합연구관리 개발, 시스템 교육 담당
             </h2>
-            <h3 class="job__period">
+            <h3 class='job__period'>
               기간 : 2020.06.22. ~ 
             </h3>
           </div>
         </div>
       </div>
-      <h1 class="practice">
+      <h1 class='practice'>
         Training  
         <br />
     </h1>
-    <div class="about__Trainings">
-      <div class="job">
-        <img src="images/sm.jpg" alt="class" class="job__logo" />
-        <div class="Trainings__description">
-          <h2 class="Trainings__name">
+    <div class='about__Trainings'>
+      <div class='job'>
+        <img src='images/sm.jpg' alt='class' class='job__logo' />
+        <div class='Trainings__description'>
+          <h2 class='Trainings__name'>
             스마트미디어인재개발원 
           </h2>
-          <h2 class="Trainings__class">
+          <h2 class='Trainings__class'>
             - 스마트그리드기반 IOT융합 SW전문가과정(NCS)
           </h2>
-          <h3 class="Trainings__period">
+          <h3 class='Trainings__period'>
             내용 : <br />- Java - Python  - Sql - Database 구축 - Html  - Jsp - Servlet - R  
             <br />- Java 기반 Android Studio를 이용한 application 제작  
             <br />- Arduino와 Raspberry를 이용한 센서 제어 
           </h3>
-          <h3 class="Trainings__period">
+          <h3 class='Trainings__period'>
             기간 : 2020.01.02. ~ 2020.05.11
           </h3>
         </div>
       </div>
-      <div class="Trainings">
-        <img src="images/acc.jpg" alt="class" class="job__logo" />
-        <div class="Trainings__description">
-          <h2 class="Trainings__name">
+      <div class='Trainings'>
+        <img src='images/acc.jpg' alt='class' class='job__logo' />
+        <div class='Trainings__description'>
+          <h2 class='Trainings__name'>
             국립아시아문화전당
             
           </h2>
-          <h2 class="Trainings__class">
+          <h2 class='Trainings__class'>
             - CT프로그래머 교육프로그램
           </h2>
-          <h3 class="Trainings__period">
+          <h3 class='Trainings__period'>
             내용 : 
             <br />- 문화기술이론 강좌
             - Arduino 
             - Tensegrity 구조물 제작  
             
           </h3>
-          <h3 class="Trainings__period">
+          <h3 class='Trainings__period'>
             기간 : 2019.04.06.~ 2019.07.13, 2019.11.01.~ 2019.11.03
           </h3>
         </div>
       </div>
-      <div class="Trainings"></div>
+      <div class='Trainings'></div>
     </div>
     </section>
     <!-- Skills -->
-    <section id="skills" class="section">
-      <div class="section__container">
+    <section id='skills' class='section'>
+      <div class='section__container'>
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <p>
@@ -193,84 +191,84 @@
           <br/>항상 사용자의 입장을 생각하며 시스템 개선에 노력하고 있습니다.
           <br/>
           <br/>개발자로 입문전에는 대학원 진학을 위한 공부를 했었고, 취미로서 영상편집을 배워 공모전에 수상한 경력이 있습니다.
-          <br/>국립아시아문화전당에서의 "CT프로그래머" 교육을 통해 개발자에 관심을 갖게 되었고, 개발자에 대한 역량을 키우기 위해 
+          <br/>국립아시아문화전당에서의 'CT프로그래머' 교육을 통해 개발자에 관심을 갖게 되었고, 개발자에 대한 역량을 키우기 위해 
           <br/>'스마트미디어인재개발원'에서 프로그래밍 언어들을 습득하였고, 3번의 프로젝트를 진행하였습니다. 
           <br/>Project 진행 시에 사용자의 관점에서 개발을 우선시 하였고, Android, Web, UI/UX 등 을 개발 및 총괄 하였습니다.  
           <br/>
           <br/>주변의 동료들과 항상 발전하는 개발자를 목표로 경험을 쌓고 있고 지식의 탐구자로서 
           <br/>배움을 두려워 하지 않으며, 새로운 기술을 받아들일 준비가 되어 있습니다. 
         </p>
-        <div class="skillset">
-          <div class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-              <div class="skill__description">
+        <div class='skillset'>
+          <div class='skillset__left'>
+            <h3 class='skillset__title'>Skills</h3>
+            <div class='skill'>
+              <div class='skill__description'>
                 <span>JavaScript</span>
                 <span>99%</span>
               </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 99%;"></div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 99%;'></div>
               </div>
             </div>
-            <div class="skill">
-              <div class="skill__description">
+            <div class='skill'>
+              <div class='skill__description'>
                 <span>TypeScript</span>
                 <span>75%</span>
               </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 75%;"></div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 75%;'></div>
               </div>
             </div>
-            <div class="skill">
-              <div class="skill__description">
+            <div class='skill'>
+              <div class='skill__description'>
                 <span>React</span>
                 <span>90%</span>
               </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%;"></div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 90%;'></div>
               </div>
             </div>
-            <div class="skill">
-              <div class="skill__description">
+            <div class='skill'>
+              <div class='skill__description'>
                 <span>HTML</span>
                 <span>90%</span>
               </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%;"></div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 90%;'></div>
               </div>
             </div>
-            <div class="skill">
-              <div class="skill__description">
+            <div class='skill'>
+              <div class='skill__description'>
                 <span>CSS</span>
                 <span>90%</span>
               </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%;"></div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 90%;'></div>
               </div>
             </div>
-            <div class="skill">
-              <div class="skill__description">
+            <div class='skill'>
+              <div class='skill__description'>
                 <span>JAVA</span>
                 <span>95%</span>
               </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 95%;"></div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 95%;'></div>
               </div>
             </div>
-            <div class="skill">
-              <div class="skill__description">
+            <div class='skill'>
+              <div class='skill__description'>
                 <span>SQL</span>
                 <span>85%</span>
               </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 85%;"></div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 85%;'></div>
               </div>
             </div>
           </div>
-          <div class="skillset__right">
-            <div class="tools">
-              <h3 class="skillset__title">Tools</h3>
-              <ul class="tools__list"></ul>
+          <div class='skillset__right'>
+            <div class='tools'>
+              <h3 class='skillset__title'>Tools</h3>
+              <ul class='tools__list'></ul>
               <li><span>Naxacro</span></li>
               <li><span>Visual Studio Code</span></li>
               <li><span>Android Studio</span></li>
@@ -278,9 +276,9 @@
               <li><span>arduino</span></li>
               <li><span>sql developer</span></li>
             </div>
-            <div class="etc">
-              <h3 class="skillset__title">Etc</h3>
-              <ul class="etc__list">
+            <div class='etc'>
+              <h3 class='skillset__title'>Etc</h3>
+              <ul class='etc__list'>
                 <li><span>Git</span></li>
                 <li><span>Notion</span></li>
                 <li><span>Photoshop</span></li>
@@ -297,36 +295,36 @@
       </div>
     </section>
     <!-- Work -->
-    <section id="work" class="section">
-      <div class="section__container">
+    <section id='work' class='section'>
+      <div class='section__container'>
         <h1>My work</h1>
-      <h3>projects</h3>
-      <div class="work__categories">
-        <button class="category__btn active" data-filter="*">
-          All Project<span class="category__count">7</span>
+      <h3>projects&portflio</h3>
+      <div class='work__categories'>
+        <button class='category__btn active' data-filter='*'>
+          All Project<span class='category__count'>7</span>
         </button>
-        <button class="category__btn" data-filter="work">
-          Work<span class="category__count">1</span>
+        <button class='category__btn' data-filter='work'>
+          Work<span class='category__count'>1</span>
         </button>
-        <button class="category__btn" data-filter="portfolio">
-          Portfolio<span class="category__count">2</span>
+        <button class='category__btn' data-filter='portfolio'>
+          Portfolio<span class='category__count'>2</span>
         </button>
-        <button class="category__btn" data-filter="training">
-          Trainings<span class="category__count">3</span>
+        <button class='category__btn' data-filter='training'>
+          Trainings<span class='category__count'>3</span>
         </button>
-        <button class="category__btn" data-filter="etc">
-          ETC.<span class="category__count">1</span>
+        <button class='category__btn' data-filter='etc'>
+          ETC.<span class='category__count'>1</span>
         </button>
         
       </div>
-      <div class="work__projects">
-        <a href="https://youtu.be/7eitqwgg1nM" class="project" target="blank" data-type="work">
+      <div class='work__projects'>
+        <a href='https://youtu.be/7eitqwgg1nM' class='project' target='blank' data-type='work'>
           <img
-            src="images/korus.png"
-            alt="korus"
-            class="project__img"
+            src='images/korus.png'
+            alt='korus'
+            class='project__img'
           />
-          <div class="project__description">
+          <div class='project__description'>
             <h3>KORUS 국립대학자원관리시스템-(주)코넥</h3>
               <span>
                 <br/>정보보안시스템 운영 SM 
@@ -336,13 +334,13 @@
               </span>
           </div>
         </a>
-          <a href="https://youtu.be/7eitqwgg1nM" class="project" target="blank" data-type="portfolio">
+          <a href='https://youtu.be/7eitqwgg1nM' class='project' target='blank' data-type='portfolio'>
             <img
-              src="images/yellow star.png"
-              alt="React_CardMaker"
-              class="project__img"
+              src='images/yellow star.png'
+              alt='React_CardMaker'
+              class='project__img'
             />
-            <div class="project__description">
+            <div class='project__description'>
               <h3>Card-Maker</h3>
                 <span>
                   <br/>React를 이용하여 개발 한 프로젝트 입니다. 
@@ -353,13 +351,13 @@
                 </span>
             </div>
           </a>
-          <a href="https://6009bc78c727d31a5b393911--joonhyuk-habit-tracker.netlify.app" class="project" target="blank" data-type="portfolio">
+          <a href='https://6009bc78c727d31a5b393911--joonhyuk-habit-tracker.netlify.app' class='project' target='blank' data-type='portfolio'>
             <img
-              src="images/yellow star.png"
-              alt="realdieter"
-              class="project__img"
+              src='images/yellow star.png'
+              alt='realdieter'
+              class='project__img'
             />
-            <div class="project__description">
+            <div class='project__description'>
               <h3>Habit-tracker</h3>
               <span>
                 React를 이용한 연습용 project 입니다.<br/>
@@ -367,13 +365,13 @@
               </span>
             </div>
           </a>
-        <a href="https://youtu.be/7eitqwgg1nM" class="project" target="blank" data-type="training">
+        <a href='https://youtu.be/7eitqwgg1nM' class='project' target='blank' data-type='training'>
           <img
-            src="images/project/project_realdieter.png"
-            alt="realdieter"
-            class="project__img"
+            src='images/project/project_realdieter.png'
+            alt='realdieter'
+            class='project__img'
           />
-          <div class="project__description">
+          <div class='project__description'>
             <h3>최종 융합 프로젝트 : <br/>개인 맞춤 건강관리를 위한 <br/>‘All in one 식단 관리 시스템’</h3>
             <span>팀 산출 문서를 작성, <br/>Open Source 코드 분석
               <br/>JAVA 언어를 이용하여 <br/>안드로이드 페이지와 기능 제작
@@ -381,13 +379,13 @@
             </span>
           </div>
         </a>
-        <a href="https://youtu.be/tgyLjlT5KD4" class="project" target="blank"data-type="training">
+        <a href='https://youtu.be/tgyLjlT5KD4' class='project' target='blank'data-type='training'>
           <img
-            src="images/project/project_observer.png"
-            alt="Observer"
-            class="project__img"
+            src='images/project/project_observer.png'
+            alt='Observer'
+            class='project__img'
           />
-          <div class="project__description">
+          <div class='project__description'>
             <h3>‘흡연 알림 감지 서비스 옵저버’</h3>
             <span>JAVA를 이용하여 Android Page 제작, 
               <br/>Photoshop으로 아이콘 제작 <br/> UI의 시각적 완성도를 높였습나다.
@@ -397,24 +395,24 @@
           </div>
         </a>
         
-        <a href="https://youtu.be/C9IW9T2BbF4" class="project" target="blank" data-type="training">
+        <a href='https://youtu.be/C9IW9T2BbF4' class='project' target='blank' data-type='training'>
           <img
-            src="images/project/project_neis.png"
-            alt="Neis"
-            class="project__img"
+            src='images/project/project_neis.png'
+            alt='Neis'
+            class='project__img'
           />
-          <div class="project__description">
+          <div class='project__description'>
             <h3>‘간호사 병동 관리 시스템 NEIS’</h3>
             <span>JAVA 기반 Web Framework <br/> Vaadin을 이용한<br/> 웹 GUI 및 기능을 담아 <br/>직관적인 인터페이스를 구현</span>
           </div>
         </a>
-        <a href="https://youtu.be/tgyLjlT5KD4" class="project" target="blank"data-type="etc">
+        <a href='https://youtu.be/tgyLjlT5KD4' class='project' target='blank'data-type='etc'>
           <img
-            src="images/Youtube.png"
-            alt="Observer"
-            class="project__img"
+            src='images/Youtube.png'
+            alt='Observer'
+            class='project__img'
           />
-          <div class="project__description">
+          <div class='project__description'>
             <h3>영상 공모전 수상작 : </h3>
             <span>JAVA를 이용하여 Android Page 제작, 
               <br/>Photoshop으로 아이콘 제작 <br/> UI의 시각적 완성도를 높였습나다.
@@ -427,35 +425,35 @@
       </div>
     </section>
     <!--  Education-->
-    <section id="education" class="section section__container">
-      <h1 class="edu_header">
+    <section id='education' class='section section__container'>
+      <h1 class='edu_header'>
         education<br/>
       </h1>
-      <div class="about__edu">
-        <div class="edu">
-          <img src="images/jnu.jpg" alt="class" class="edu__logo" />
-          <div class="edu__description">
-            <h2 class="edu__name">
+      <div class='about__edu'>
+        <div class='edu'>
+          <img src='images/jnu.jpg' alt='class' class='edu__logo' />
+          <div class='edu__description'>
+            <h2 class='edu__name'>
               전남대학교 융합보안대학원 
             </h2>
-            <h2 class="edu__class">
+            <h2 class='edu__class'>
               - 비전일제(Part-time) : 재학
             </h2>
-            <h3 class="edu__period">
+            <h3 class='edu__period'>
               기간 : 2020.09.01 ~ 
             </h3>
           </div>
         </div>
-        <div class="edu">
-          <img src="images/jnu.jpg" alt="class" class="edu__logo" />
-          <div class="edu__description">
-            <h2 class="edu__name">
+        <div class='edu'>
+          <img src='images/jnu.jpg' alt='class' class='edu__logo' />
+          <div class='edu__description'>
+            <h2 class='edu__name'>
               전남대학교 물리학과 - 학사 졸업
             </h2>
-            <h2 class="edu__class">
+            <h2 class='edu__class'>
               - 부전공 : 화학과
             </h2>
-            <h3 class="edu__period">
+            <h3 class='edu__period'>
               기간 : 2009.03.02.~2018.02.26
             </h3>
           </div>
@@ -464,27 +462,27 @@
     </div>
     </section>
     <!-- Contact -->
-    <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk</h1>
-      <h2 class="contact__email">anshqhsh.dev@gmail.com</h2>
-      <div class="contact__links">
-        <a href="https://github.com/anshqhsh" target="_blank">
-          <i class="fab fa-github"></i>
+    <section id='contact' class='section'>
+      <h1 class='contact__title'>Let's talk</h1>
+      <h2 class='contact__email'>anshqhsh.dev@gmail.com</h2>
+      <div class='contact__links'>
+        <a href='https://github.com/anshqhsh' target='_blank'>
+          <i class='fab fa-github'></i>
         </a>
-        <a href="https://www.youtube.com/channel/UC4I0muX_cx1sE6GnS2roM4g" target="_blank">
-          <i class="fab fa-youtube"></i>
+        <a href='https://www.youtube.com/channel/UC4I0muX_cx1sE6GnS2roM4g' target='_blank'>
+          <i class='fab fa-youtube'></i>
         </a>
-        <a href="https://www.youtube.com/channel/UC2IPKp_xCnNrPMU5HL98CQQ" target="_blank">
-          <i class="fab fa-youtube"></i>
+        <a href='https://www.youtube.com/channel/UC2IPKp_xCnNrPMU5HL98CQQ' target='_blank'>
+          <i class='fab fa-youtube'></i>
         </a>
       </div>
-      <p class="contact__rights">
+      <p class='contact__rights'>
         2021 LeeJoonHyuk Portfolio - All right reserved
       </p>
     </section>
     <!-- Arrow up -->
-    <button class="arrow-up">
-      <i class="fas fa-arrow-up"></i>
+    <button class='arrow-up'>
+      <i class='fas fa-arrow-up'></i>
     </button>
   </body>
 </html>
