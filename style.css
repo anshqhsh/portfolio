@@ -477,29 +477,30 @@ p {
   pointer-events: auto;
 }
 
-/* For below 768px screen width 반응형*/
+/* For below 768px screen width */
 @media screen and (max-width: 768px) {
-  .h3 {
-    font-size: 9px;
-  }
   :root {
+    /* Font size */
     --font-large: 30px;
     --font-medium: 18px;
     --font-regular: 16px;
     --font-small: 14px;
     --font-micro: 12px;
   }
+
   .navbar__toggle-btn {
-    display: none;
-    top: 20px;
-    right: 20px;
-    font-size: 18px;
+    display: block;
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
   }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: #b2d9b7;
+    background-color: var(--color-pink);
   }
+
   #navbar.navbar--dark {
     padding: 16px;
   }
@@ -516,6 +517,7 @@ p {
 
   .section {
     padding: 16px;
+    padding-top: 40px;
   }
 
   .about__majors {
@@ -523,29 +525,50 @@ p {
     margin-top: 30px;
     margin-bottom: 0px;
   }
+
   .major {
     margin-bottom: 30px;
   }
+
   .skillset {
     flex-direction: column;
   }
+
   .category__btn {
-    margin: 4px;
-    width: 70%;
+    margin: 4px 0;
+    width: 100%;
   }
+
   .project {
     flex-grow: 1;
   }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial__avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .testimonial__avatar:nth-child(even),
+  .testimonial__avatar:nth-child(odd) {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .testimonial__speech-bubble {
+    order: 1;
+  }
+
   .arrow-up {
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
     font-size: 30px;
-    line-height: 48px;
+    line-height: 50px;
     right: 16px;
     bottom: 16px;
-  }
-  .testimonial__recomend {
-    width: 300px;
-    height: 450px;
   }
 }

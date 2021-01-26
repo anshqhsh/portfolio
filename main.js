@@ -88,14 +88,13 @@ workBtnContainer.addEventListener('click', e => {
   }, 300);
 });
 
-function scrollIntoView(selector) {
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({ behavior: 'smooth' });
-}
+
 
 // 1. 모든 섹션 요소들과 메뉴아이템들을 가지고 온다
 // 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다
 // 3. 보여지는 섹션에 해당하는 메뉴 아이템을 활성화 시킨다
+
+//문자열을 배열로 저장
 const sectionIds = [
   '#home',
   '#about',
@@ -104,18 +103,31 @@ const sectionIds = [
   '#education',
   '#contact',
 ];
+
+//섹션요소들을 할당
 const sections = sectionIds.map(id => document.querySelector(id));
+
+//네비게이션 메뉴 아이템 요소들
 const navItems = sectionIds.map(id =>
-  document.querySelector(`[data-link="${id}"]`)
+  document.querySelector(`[data-link='${id}']`)
 );
+
 //현재 선택되어 있는 내비게이션 아이디를 기억하고 있다가 다음선택이 될때 전의 것의 액티브 지우고 지금것에 active적용해줘야함 
 let selectedNavIndex = 0; //인덱스
 let selectedNavItem = navItems[0];//navItem 배열의 selectedNavIndex
+//새로운 메뉴 아이템을 선택 할 때 마다 이전 활성화를 지워주고 새로운것에 추가
 function selectNavItem(selected) {
-  selectedNavItem.classList.remove('active');//액티브를 삭제
+  selectedNavItem.classList.remove('active');
   selectedNavItem = selected;
   selectedNavItem.classList.add('active');
 }
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+  selectNavItem(navItems[sectionIds.indexOf(selector)])
+}
+
 
 const observerOptions = {
   root: null,
@@ -123,11 +135,14 @@ const observerOptions = {
   threshold: 0.3,
 };
 
+//콜백 함수
 const observerCallback = (entries, observer) => {
+  //엔트리스를 돎 해당하는 섹션을 찾아 활성화시켜줌 
   entries.forEach(entry => {
     if (!entry.isIntersecting && entry.intersectionRatio > 0) {
+//      console.log(entry);
       const index = sectionIds.indexOf(`#${entry.target.id}`);
-      console.log(index, entry.target.id); //인덱스, 타겟 id 출력
+      //console.log(index, entry.target.id); //인덱스, 타겟 id 출력
       // y<0이면 스크롤링이 아래로 되어서 페이지가 올라옴 , 방향 
       if (entry.boundingClientRect.y < 0) {
         selectedNavIndex = index + 1;
@@ -138,14 +153,18 @@ const observerCallback = (entries, observer) => {
   });
 };
 
-const observer = new IntersectionObserver(observerCallback, observerOptions);
-sections.forEach(section => observer.observe(section));
+const observer = new IntersectionObserver(observerCallback, observerOptions);//옵저버를 만들어 해당하는 콜백과 옵션을 전달 각각의 세션들을 관찰 
+sections.forEach(section => observer.observe(section));//색션스를 관찰 하면서 옵져버가 관찰 하도록
 
-window.addEventListener('scroll', ()=> {
-  if(window.scrollY === 0){
+window.addEventListener('wheel', () => {//스크롤이 될때 마다
+  if (window.scrollY === 0) {
     selectedNavIndex = 0;
-  }else if(window.scrollY + window.innerHeight == document.body.clientHeight){//스크롤 끝에 도달
-    seledctedNavIndex = navItems.length - 1;
+  } else if (
+    Math.round(window.scrollY + window.innerHeight) >=
+    document.body.clientHeight
+  ) {
+    selectedNavIndex = navItems.length - 1;
   }
-  selectedNavItem(navItems[selectedNavIndex]);
-})
+  selectNavItem(navItems[selectedNavIndex]);
+
+});
