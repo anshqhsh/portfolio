@@ -31,9 +31,9 @@
         <ul class='navbar__menu'>
           <li class='navbar__menu__item active' data-link ='#home'>Home</li>
           <li class='navbar__menu__item' data-link ='#about'>About</li>
-          <li class='navbar__menu__item' data-link ='#skills'>Skills</li>
+          <!-- <li class='navbar__menu__item' data-link ='#skills'>Skills</li> -->
           <li class='navbar__menu__item' data-link ='#work'>My work</li>
-          <li class='navbar__menu__item' data-link ='#education'>Education</li>
+          <!-- <li class='navbar__menu__item' data-link ='#education'>Education</li> -->
           <li class='navbar__menu__item' data-link ='#contact'>contact</li>
         </ul>
         <!-- Toggle button -->
@@ -52,11 +52,7 @@
         />
         <h1 class='home__title'>Hello, <br />I'm Lee JoonHyuk</h1>
         <h2 class='home__description'>
-          “사람들의 더 나은 삶과 안녕을 꿈꾸는 개발자 이준혁입니다.”   
-          <br/>     
-          <br/>KORUSㆍ국립대 자원관리시스템 프로젝트의 한 일원으로서 운영(SM), Naxacro를 이용한 개발(JAVA)과, 시스템 교육업무를 맡았습니다.<br/>
-          스마트미디어인재개발원에서 Java, HTML, CSS, JavaScript, Oracle DB, Android Studio 등을 이용한 프로젝트를 진행했습니다.
-        </h2>
+          “사람들의 더 나은 삶과 안녕을 꿈꾸는 개발자 이준혁입니다.”</br>  
         <button class='home__contact'>Contact Me</button>
       </div>
     </section>
@@ -64,7 +60,7 @@
     <!-- About -->
     <section id='about' class='section section__container'>
       <h1>About me</h1>
-      <p>저는 이런 능력들을 가지고 있습니다!</p>
+      <h2>Skills & Attributes</h2>
       <div class='about__majors'>
         <div class='major'>
           <div class='major__icon'>
@@ -83,7 +79,7 @@
           </div>
           <h2 class='major__title'>Back-End</h2>
           <div class='major__description'>
-            JAVA, SQL
+            JAVA, SQL, Node.js
           </div>
         </div>
         <div class='major'>
@@ -107,29 +103,191 @@
           </p>
         </div>
       </div>
-      <h1 class='jobs_header'>
-          Work  
-          <br />
-      </h1>
-      <div class='about__jobs'>
-        <div class='job'>
-          <img src='images/kornec_logo.png' alt='class' class='job__logo' />
-          <div class='job__description'>
-            <h2 class='job__name'>
-              (주)코넥
-            </h2>
-            <h2 class='job__class'>
-              - KORUSㆍ국립대자원관리시스템구축 프로젝트(근무처 : 광주광역시 전남대학교 용지관 7층) 
-            </h2>
-            <h3 class='job__period'>
-              내용 : <br> JAVA, Nexacro를 이용한 통합연구관리 개발, 시스템 교육 담당
-            </h2>
-            <h3 class='job__period'>
-              기간 : 2020.06.22. ~ 2021.03.31
-            </h3>
+      <div class='section__container'>
+        <!-- <p>
+          KORUSㆍ국립대 자원관리시스템 프로젝트의 한 일원으로서, 국립대 대학들의 연구 지원용 Web을 개발, 운영 하였습니다.
+          <br/>JAVA, SQL, Naxacro를 이용하여 통합연구개발, 대학 사용자를 위한 시스템 교육업무를 수행하였고, 
+          <br/>대학 사용자의 입장을 생각하며 시스템 개선에 노력하였습니다.
+          <br/>
+          <br/>개발자로 입문 전에는 대학원 진학을 위한 공부를 했고, 취미로서 영상편집을 배워 공모전에 수상한 경력이 있습니다.
+          <br/>국립아시아문화전당에서의 'CT 프로그래머' 교육을 통해 개발자에 관심을 두게 되어 개발자에 대한 역량을 키우기 위해 
+          <br/>'스마트미디어인재개발원'에서 프로그래밍 언어들을 습득하였고, 3번의 Project를 진행하였습니다. 
+          <br/>Project 진행 시에 사용자의 관점에서 개발을 우선시 하였고, Android, Web, UI/UX 등을 개발 및 총괄하였습니다.  
+          <br/>
+          <br/>하나의 서비스를 만들고 제공하기까지는 팀원 전체의 노력이 필요하다고 생각합니다.
+          <br/>훌륭한 서비스를 제공하는 훌륭한 팀의 일원이 될 수 있도록 다양한 직무의 팀 구성원들과 적극적으로 커뮤니케이션 하여 함께 성장해나가겠습니다.
+          <br/>
+          <br/>저는 배우는 것에 즐거움을 느낍니다. 항상 더 나은 개발자를 목표로 경험을 쌓고 있고, 지식의 탐구자로서 배움을 두려워하지 않습니다. 
+          <br/>사용자에게 더 나은 서비스를 제공하는 것이 제가 목표로 하는 개발자입니다. 
+        </p> -->
+        <div class='skillset'>
+          <div class='skillset__left'>
+            <h3 class='skillset__title'>Hard Skills</h3>
+            <div class='skill'>
+              <div class='skill__description'>
+                <span>JavaScript</span>
+                <span>80%</span>
+              </div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 80%;'></div>
+              </div>
+            </div>
+            <div class='skill'>
+              <div class='skill__description'>
+                <span>TypeScript</span>
+                <span>65%</span>
+              </div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 65%;'></div>
+              </div>
+            </div>
+            <div class='skill'>
+              <div class='skill__description'>
+                <span>React</span>
+                <span>80%</span>
+              </div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 80%;'></div>
+              </div>
+            </div>
+            <div class='skill'>
+              <div class='skill__description'>
+                <span>Node.js</span>
+                <span>45%</span>
+              </div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 45%;'></div>
+              </div>
+            </div>
+            <div class='skill'>
+              <div class='skill__description'>
+                <span>HTML</span>
+                <span>75%</span>
+              </div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 75%;'></div>
+              </div>
+            </div>
+            <div class='skill'>
+              <div class='skill__description'>
+                <span>CSS</span>
+                <span>60%</span>
+              </div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 60%;'></div>
+              </div>
+            </div>
+            <div class='skill'>
+              <div class='skill__description'>
+                <span>JAVA</span>
+                <span>80%</span>
+              </div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 80%;'></div>
+              </div>
+            </div>
+            <div class='skill'>
+              <div class='skill__description'>
+                <span>SQL</span>
+                <span>65%</span>
+              </div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 65%;'></div>
+              </div>
+            </div>
+            <h3 class='skillset__title'>Soft Skills</h3>
+            <div class='skill'>
+              <div class='skill__description'>
+                <span>Communication</span>
+                <span>80%</span>
+              </div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 80%;'></div>
+              </div>
+            </div>
+            <div class='skill'>
+              <div class='skill__description'>
+                <span>Curiosity</span>
+                <span>99%</span>
+              </div>
+              <div class='skill__bar'>
+                <div class='skill__value' style='width: 99%;'></div>
+              </div>
+            </div>
+          </div>
+          <div class='skillset__right'>
+            <div class='tools'>
+              <h3 class='skillset__title'>Tools</h3>
+              <ul class='tools__list'></ul>
+              <li><span>Nexacro</span></li>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>Android Studio</span></li>
+              <li><span>Eclipse</span></li>
+              <li><span>arduino</span></li>
+              <li><span>sql developer</span></li>
+            </div>
+            <div class='etc'>
+              <h3 class='skillset__title'>Etc</h3>
+              <ul class='etc__list'>
+                <li><span>Git</span></li>
+                <li><span>Notion</span></li>
+                <li><span>Photoshop</span></li>
+                <li><span>Illustrator</span></li>
+                <li><span>Final Cut Pro X </span></li>
+                <li><span>Premiere Pro</span></li>
+                <li><span>After Effects </span></li>
+                <li><span>CAD</span></li>
+                <li><span>Inventor </span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <!-- <h1 class='jobs_header'>
+          Work  
+          <br />
+      </h1>
+      <div class='section__container'>
+        <div class='about__jobs'>
+          <div class='job'>
+            <img src='images/yeoboya.jpeg' alt='class' class='job__logo' />
+            <div class='job__description'>
+              <h2 class='job__name'>
+                (주)인포렉스
+              </h2>
+              <h2 class='job__class'>
+                - 결혼 중매앱 "여보야" - 인터넷사업부 웹개발자 
+              </h2>
+              <h3 class='job__period'>
+                내용 : <br> JAVA, Nexacro를 이용한 통합연구관리 개발, 시스템 교육 담당
+              </h2>
+              <h3 class='job__period'>
+                기간 : 2020.06.22. ~ 2021.03.31
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class='about__jobs'>
+          <div class='job'>
+            <img src='images/kornec_logo.png' alt='class' class='job__logo' />
+            <div class='job__description'>
+              <h2 class='job__name'>
+                (주)코넥
+              </h2>
+              <h2 class='job__class'>
+                - 국립대 자원관리시스템 “KORUS” - 통합연구 개발  & 시스템교육
+              </h2>
+              <h3 class='job__period'>
+                내용 : <br> JAVA, Nexacro를 이용한 통합연구관리 개발, 시스템 교육 담당
+              </h2>
+              <h3 class='job__period'>
+                기간 : 2020.06.22. ~ 2021.03.31
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
       <h1 class='practice'>
         Training  
         <br />
@@ -145,7 +303,7 @@
             - 스마트그리드기반 IOT융합 SW전문가과정(NCS)
           </h2>
           <h3 class='Trainings__period'>
-            내용 : <br />- Java - Python  - Sql - Database 구축 - Html  - Jsp - Servlet - R  
+            내용 : <br />- Java - Python  - Sql - Database 구축 - Html  - Jsp - Servlet - R  
             <br />- Java 기반 Android Studio를 이용한 application 제작  
             <br />- Arduino와 Raspberry를 이용한 센서 제어 
           </h3>
@@ -176,140 +334,23 @@
           </h3>
         </div>
       </div>
-      <div class='Trainings'></div>
-    </div>
-    </section>
-    <!-- Skills -->
-    <section id='skills' class='section'>
-      <div class='section__container'>
-        <h1>Skills</h1>
-        <h2>Skills & Attributes</h2>
-        <p>
-          KORUSㆍ국립대 자원관리시스템 프로젝트의 한 일원으로서, 국립대 대학들의 연구 지원용 Web을 개발, 운영 하였습니다.
-          <br/>JAVA, SQL, Naxacro를 이용하여 통합연구개발, 대학 사용자를 위한 시스템 교육업무를 수행하였고, 
-          <br/>대학 사용자의 입장을 생각하며 시스템 개선에 노력하였습니다.
-          <br/>
-          <br/>개발자로 입문 전에는 대학원 진학을 위한 공부를 했고, 취미로서 영상편집을 배워 공모전에 수상한 경력이 있습니다.
-          <br/>국립아시아문화전당에서의 'CT 프로그래머' 교육을 통해 개발자에 관심을 두게 되어 개발자에 대한 역량을 키우기 위해 
-          <br/>'스마트미디어인재개발원'에서 프로그래밍 언어들을 습득하였고, 3번의 Project를 진행하였습니다. 
-          <br/>Project 진행 시에 사용자의 관점에서 개발을 우선시 하였고, Android, Web, UI/UX 등을 개발 및 총괄하였습니다.  
-          <br/>
-          <br/>하나의 서비스를 만들고 제공하기까지는 팀원 전체의 노력이 필요하다고 생각합니다.
-          <br/>훌륭한 서비스를 제공하는 훌륭한 팀의 일원이 될 수 있도록 다양한 직무의 팀 구성원들과 적극적으로 커뮤니케이션 하여 함께 성장해나가겠습니다.
-          <br/>
-          <br/>저는 배우는 것에 즐거움을 느낍니다. 항상 더 나은 개발자를 목표로 경험을 쌓고 있고, 지식의 탐구자로서 배움을 두려워하지 않습니다. 
-          <br/>사용자에게 더 나은 서비스를 제공하는 것이 제가 목표로 하는 개발자입니다. 
-        </p>
-        <div class='skillset'>
-          <div class='skillset__left'>
-            <h3 class='skillset__title'>Skills</h3>
-            <div class='skill'>
-              <div class='skill__description'>
-                <span>JavaScript</span>
-                <span>99%</span>
-              </div>
-              <div class='skill__bar'>
-                <div class='skill__value' style='width: 99%;'></div>
-              </div>
-            </div>
-            <div class='skill'>
-              <div class='skill__description'>
-                <span>TypeScript</span>
-                <span>75%</span>
-              </div>
-              <div class='skill__bar'>
-                <div class='skill__value' style='width: 75%;'></div>
-              </div>
-            </div>
-            <div class='skill'>
-              <div class='skill__description'>
-                <span>React</span>
-                <span>90%</span>
-              </div>
-              <div class='skill__bar'>
-                <div class='skill__value' style='width: 90%;'></div>
-              </div>
-            </div>
-            <div class='skill'>
-              <div class='skill__description'>
-                <span>HTML</span>
-                <span>90%</span>
-              </div>
-              <div class='skill__bar'>
-                <div class='skill__value' style='width: 90%;'></div>
-              </div>
-            </div>
-            <div class='skill'>
-              <div class='skill__description'>
-                <span>CSS</span>
-                <span>90%</span>
-              </div>
-              <div class='skill__bar'>
-                <div class='skill__value' style='width: 90%;'></div>
-              </div>
-            </div>
-            <div class='skill'>
-              <div class='skill__description'>
-                <span>JAVA</span>
-                <span>95%</span>
-              </div>
-              <div class='skill__bar'>
-                <div class='skill__value' style='width: 95%;'></div>
-              </div>
-            </div>
-            <div class='skill'>
-              <div class='skill__description'>
-                <span>SQL</span>
-                <span>85%</span>
-              </div>
-              <div class='skill__bar'>
-                <div class='skill__value' style='width: 85%;'></div>
-              </div>
-            </div>
-          </div>
-          <div class='skillset__right'>
-            <div class='tools'>
-              <h3 class='skillset__title'>Tools</h3>
-              <ul class='tools__list'></ul>
-              <li><span>Naxacro</span></li>
-              <li><span>Visual Studio Code</span></li>
-              <li><span>Android Studio</span></li>
-              <li><span>Eclipse</span></li>
-              <li><span>arduino</span></li>
-              <li><span>sql developer</span></li>
-            </div>
-            <div class='etc'>
-              <h3 class='skillset__title'>Etc</h3>
-              <ul class='etc__list'>
-                <li><span>Git</span></li>
-                <li><span>Notion</span></li>
-                <li><span>Photoshop</span></li>
-                <li><span>Illustrator</span></li>
-                <li><span>Final Cut Pro X </span></li>
-                <li><span>Premiere Pro</span></li>
-                <li><span>After Effects </span></li>
-                <li><span>CAD</span></li>
-                <li><span>Inventor </span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div> -->
     </section>
     <!-- Work -->
     <section id='work' class='section'>
       <div class='section__container'>
         <h1>My work</h1>
-      <h3>projects&portflio</h3>
+        <h3>projects&portflio</h3>
+        <div class="des">다음 사진을 누르시면 관련 링크로 연결됩니다.</div>
       <div class='work__categories'>
         <button class='category__btn active' data-filter='*'>
-          All Project<span class='category__count'>7</span>
+          All Project<span class='category__count'>9</span>
         </button>
         <button class='category__btn' data-filter='work'>
-          Work<span class='category__count'>1</span>
+          Work<span class='category__count'>2</span>
         </button>
         <button class='category__btn' data-filter='portfolio'>
-          Portfolio<span class='category__count'>2</span>
+          Portfolio<span class='category__count'>3</span>
         </button>
         <button class='category__btn' data-filter='training'>
           Trainings<span class='category__count'>3</span>
@@ -320,6 +361,22 @@
         
       </div>
       <div class='work__projects'>
+        <a href='https://www.yeoboya.com/member/login/pcIndex#' class='project' target='blank' data-type='work'>
+          <img
+            src='images/yeoboya.jpeg'
+            alt='korus'
+            class='project__img'
+          />
+          <div class='project__description'>
+            <h3>결혼 중매 앱 "여보야" - 인포렉스<br/> 웹 개발자</h3>
+              (2021.06.14~2021.7.23) 
+              <span>
+                <br/>여보야(Hybrid App)
+                <br/>JAVA, Spring framework, Javascript를 사용하여 개발
+                <br/>Admin Page 최신화 작업
+              </span>
+          </div>
+        </a>
         <a href='http://korus.kr/poe/mi/IndxCtr/indx.do' class='project' target='blank' data-type='work'>
           <img
             src='images/korus.png'
@@ -327,12 +384,13 @@
             class='project__img'
           />
           <div class='project__description'>
-            <h3>KORUS 국립대학자원관리시스템-(주)코넥</h3>
+            <h3>KORUS 국립대학자원관리시스템-(주) 코넥<br/> 웹 개발자</h3>
+              (2021.06.14~2021.7.23)  
               <span>
-                <br/>정보보안시스템 운영 SM 
-                <br/>Naxacro를 이용한 개발(JAVA)
-                <br/>시스템 교육 담당
-                <br/>테스트 시나리오, 교육자료 작성 등 <br/>개발문서 작성
+                <br/>KORUS - 국립대 자원관리 시스템 
+                <br/>웹 개발자 & 시스템 교육 담당
+                <br/>Nexacro, JAVA, SQL을 사용하여 개발
+                <br/>테스트 시나리오, 교육자료 작성 등의 업무
               </span>
           </div>
         </a>
@@ -359,7 +417,7 @@
           <div class='project__description'>
             <h3>‘흡연 알림 감지 서비스 옵저버’</h3>
             <span>JAVA를 이용하여 Android Page 제작, 
-              <br/>Photoshop으로 아이콘 제작 <br/> UI의 시각적 완성도를 높였습나다.
+              <br/>Photoshop으로 아이콘 제작 <br/> UI의 시각적 완성도를 높였습니다.
               <br/>시제품을 위하여 INVENTOR를 <br/> 활용한 3d 모델 제작 및 출력 
               <br/>프레젠테이션과 영상 제작,<br/>발표를 담당하였습니다.
             </span>
@@ -403,8 +461,22 @@
           <div class='project__description'>
             <h3>Habit-tracker</h3>
             <span>
-              React를 이용한 연습용 project 입니다.<br/>
+              React를 이용한 연습용 project입니다.<br/>
               add를 통해 데이터 추가와 JavaScript를 이용하여 구성하였습니다. 
+            </span>
+          </div>
+        </a>
+        <a href='https://github.com/anshqhsh' class='project' target='blank' data-type='portfolio'>
+          <img
+            src='images/github.png'
+            alt='github'
+            class='project__img'
+          />
+          <div class='project__description'>
+            <h3>GitHub</h3>
+            <span>
+              개발언어 습득을 위한 다양한 활동들을 
+              했습니다. 제 Github에서 확인해주세요!
             </span>
           </div>
         </a>
@@ -425,11 +497,11 @@
       </div>
     </section>
     <!--  Education-->
-    <section id='education' class='section'>
+    <!-- <section id='education' class='section'>
       <h1 class='edu_header'>
         education<br/>
       </h1>
-      <div class='about__edu'>
+      <div class='section__container'>
         <div class='edu'>
           <img src='images/jnu.jpg' alt='class' class='edu__logo' />
           <div class='edu__description'>
@@ -460,7 +532,7 @@
         </div>
       </div>
     </div>
-    </section>
+    </section> -->
     <!-- Contact -->
     <section id='contact' class='section'>
       <h1 class='contact__title'>Let's talk</h1>

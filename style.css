@@ -97,6 +97,7 @@ p {
   color: black;
   margin: 4px 0;
 }
+
 /* Navbar */
 #navbar {
   position: fixed;
@@ -111,7 +112,7 @@ p {
   z-index: 1;
 }
 #navbar.navbar--dark {
-  background-color: #b2d9b7;
+  background-color: #73aace;
   padding: 8px;
 }
 
@@ -129,7 +130,7 @@ p {
   border-radius: 4px;
   border-radius: 4px;
 }
-.navbar__menu__item.active{
+.navbar__menu__item.active {
   border: 1px solid white;
 }
 
@@ -148,7 +149,8 @@ p {
 
 /* Home */
 #home {
-  background: url('images/profilebackground.jpg') center/cover no-repeat;
+  /* background: url('images/profilebackground.jpg') center/cover no-repeat; */
+  background-color: #73aace;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -178,7 +180,7 @@ p {
 /* Section common */
 .section {
   padding: 50px;
-  padding-top: 100px;
+  padding-top: 20px;
   text-align: center;
   margin: auto;
 }
@@ -241,6 +243,9 @@ p {
   color: #6f6c6c;
   font-size: 16px;
 }
+.job__logo {
+  width: 80px;
+}
 .Trainings {
   display: flex;
   align-items: center;
@@ -268,7 +273,7 @@ p {
 
 /* Skill */
 #skills {
-  background-color: #fff7d1;
+  background-color: #73aace;
 }
 .skillset {
   display: flex;
@@ -337,6 +342,9 @@ p {
   font-size: 16px;
 }
 /* Work */
+.work__categories {
+  margin: 20px;
+}
 .category__btn {
   border: 1px solid #bdbdbd;
   border-radius: 4px;
@@ -395,8 +403,8 @@ p {
   display: none;
 }
 .project__img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
   align-self: center;
 }
 .project__description {
@@ -435,16 +443,15 @@ p {
 
 /* Contact */
 #contact {
-  background-color: #b2d9b7;
+  background-color: #73aace;
 }
 .contact__title,
-.contact__email,
-.contact__rights {
+.contact__email {
   color: white;
 }
 
 .contact__title {
-  margin: 32px 0;
+  margin: 8px 0;
 }
 .contact__links {
   font-size: 40px;
@@ -456,6 +463,10 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: #b1df0b;
+}
+/* Footer */
+#contact {
+  background-color: #73aace;
 }
 /* Scroll */
 .arrow-up {
@@ -518,6 +529,7 @@ p {
   .section {
     padding: 16px;
     padding-top: 40px;
+    text-align: center;
   }
 
   .about__majors {
@@ -570,5 +582,8 @@ p {
     line-height: 50px;
     right: 16px;
     bottom: 16px;
+  }
+  .rights {
+    color: bisque;
   }
 }
